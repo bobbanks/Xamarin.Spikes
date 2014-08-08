@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using Spikes.Pages;
 using Xamarin.Forms;
 
 namespace Spikes
@@ -11,15 +11,18 @@ namespace Spikes
     {
         public static Page GetMainPage()
         {
-            return new ContentPage
-            {
-                Content = new Label
-                {
-                    Text = "Hello, Forms !",
-                    VerticalOptions = LayoutOptions.CenterAndExpand,
-                    HorizontalOptions = LayoutOptions.CenterAndExpand,
-                },
-            };
+
+            return new JsonWebServicePage();
+
+//            return new ContentPage
+//            {
+//                Content = new Label
+//                {
+//                    Text = "Hello, Forms !",
+//                    VerticalOptions = LayoutOptions.CenterAndExpand,
+//                    HorizontalOptions = LayoutOptions.CenterAndExpand,
+//                },
+//            };
         }
     }
 }
