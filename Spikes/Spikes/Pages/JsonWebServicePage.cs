@@ -6,8 +6,11 @@ using Xamarin.Forms;
 namespace Spikes.Pages {
 
     public class JsonWebServicePage : ContentPage {
+		protected Label timeLabel;
 
         public JsonWebServicePage() {
+
+
             Title = "JSON Webservice Spike";
 
             var layout = new StackLayout() {
@@ -28,15 +31,26 @@ namespace Spikes.Pages {
                 HorizontalOptions = LayoutOptions.Center,
             };
 
-            button.Clicked += async (sender, args) =>  {
-                IJsonTestService service = new JsonTestService();
-                var response = await service.GetDateTimeAsync();
-                Debug.WriteLine(response);
-            };
+            button.Clicked += ButtonClicked;
 
             layout.Children.Add(button);
 
+			timeLabel = new Label() {
+				Text = "",
+				HorizontalOptions = LayoutOptions.CenterAndExpand,
+				
+			};
+
+			layout.Children.Add(timeLabel);
+
             Content = layout;
+        }
+
+        private async void ButtonClicked (object sender, System.EventArgs e)
+        {
+			IJsonTestService service = new JsonTestService();
+			var response = await service.GetDateTimeAsync();
+			timeLabel.Text = response;
         }
 
     }
