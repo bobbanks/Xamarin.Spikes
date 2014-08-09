@@ -38,7 +38,6 @@ namespace Spikes.Pages {
 			timeLabel = new Label() {
 				Text = "",
 				HorizontalOptions = LayoutOptions.CenterAndExpand,
-				
 			};
 
 			layout.Children.Add(timeLabel);

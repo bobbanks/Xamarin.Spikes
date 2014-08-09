@@ -11,8 +11,10 @@ namespace Spikes
     {
         public static Page GetMainPage()
         {
-
-            return new JsonWebServicePage();
+			var mainNav = new NavigationPage(new MainPage()) {
+				Tint = Color.Red
+			};
+			return mainNav;
 
 //            return new ContentPage
 //            {
