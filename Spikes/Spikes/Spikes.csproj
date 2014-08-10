@@ -39,6 +39,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\IJsonTestService.cs" />
     <Compile Include="Pages\MainPage.cs" />
+    <Compile Include="Model\Beer.cs" />
+    <Compile Include="Services\BeerDataService.cs" />
+    <Compile Include="Pages\MvvmPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ModernHttpClient">
@@ -87,4 +90,7 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <Folder Include="Model\" />
+  </ItemGroup>
 </Project>

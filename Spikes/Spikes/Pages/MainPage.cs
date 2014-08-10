@@ -4,15 +4,19 @@ using Spikes.Pages;
 
 namespace Spikes {
 	public class MainPage : ContentPage {
+
+		private ListView listView;
+
 		public MainPage() {
 			var layout = new StackLayout() {
 				VerticalOptions = LayoutOptions.FillAndExpand,
 			};
 
-			var listView = new ListView() {
+			listView = new ListView() {
 				RowHeight = 40,
 				ItemsSource = new string[] {
-					"Json"
+					"Json",
+					"MVVM"
 				}
 			};
 
@@ -25,10 +29,14 @@ namespace Spikes {
 
 		private void HandleItemTapped (object sender, ItemTappedEventArgs e)
 		{
+			listView.SelectedItem = null;
 			var item = (string)e.Item;
 			switch (item) {
 				case "Json":
 				 	Navigation.PushAsync(new JsonWebServicePage());
+					break;
+				case "MVVM":
+					Navigation.PushAsync(new MvvmPage());
 					break;
 				default:
 					throw new ArgumentOutOfRangeException("Unknown page");

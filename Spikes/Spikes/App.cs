@@ -12,19 +12,9 @@ namespace Spikes
         public static Page GetMainPage()
         {
 			var mainNav = new NavigationPage(new MainPage()) {
-				Tint = Color.Red
+				Tint = Color.Accent
 			};
 			return mainNav;
-
-//            return new ContentPage
-//            {
-//                Content = new Label
-//                {
-//                    Text = "Hello, Forms !",
-//                    VerticalOptions = LayoutOptions.CenterAndExpand,
-//                    HorizontalOptions = LayoutOptions.CenterAndExpand,
-//                },
-//            };
         }
     }
 }

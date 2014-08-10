@@ -161,7 +161,7 @@ Global
 		{E8CD8E84-9B6E-4CE3-A6A2-BF73DE214396}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Spikes\Spikes.Android\Spikes.Android.csproj
+		StartupItem = Spikes\Spikes.iOS\Spikes.iOS.csproj
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
