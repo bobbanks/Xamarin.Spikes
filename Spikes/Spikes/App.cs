@@ -7,12 +7,12 @@ using Xamarin.Forms;
 
 namespace Spikes
 {
-    public class App
-    {
-        public static Page GetMainPage()
-        {
-			var mainNav = new NavigationPage(new MainPage());
-			return mainNav;
+    public class App {
+
+        private static Page homeView;
+
+        public static Page GetMainPage() {
+            return homeView ?? (homeView = new NavigationPage(new MainPage()));
         }
     }
 }

@@ -3,9 +3,9 @@ using Xamarin.Forms;
 
 namespace Spikes {
 
-    public class BasePage : ContentPage {
+    public class BaseView : ContentPage {
 
-        public BasePage()
+        public BaseView()
         {
             SetBinding (Page.TitleProperty, new Binding(BaseViewModel.TitlePropertyName));
             SetBinding (Page.IconProperty, new Binding(BaseViewModel.IconPropertyName));

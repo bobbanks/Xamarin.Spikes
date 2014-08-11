@@ -3,7 +3,7 @@ using Xamarin.Forms;
 
 namespace Spikes {
 
-    public class BeerDetailView : BasePage {
+    public class BeerDetailView : BaseView {
         public BeerDetailView(BeerDetailModel model) {
 
             Title = model.Name;

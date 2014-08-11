@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 namespace Spikes {
 
-    public class BeerListView : BasePage {
+    public class BeerListView : BaseView {
 
         private BeerListViewModel ViewModel {
             get { return BindingContext as BeerListViewModel; }
