@@ -1,30 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
+using Spikes.Model;
 
 namespace Spikes {
 
 	public interface IBeerDataService {
-		List<Beer> All();
+		List<BeerDetailModel> All();
 	}
 
-	public class BeerDataService {
+	public class BeerDataService : IBeerDataService {
 
-		public List<Beer> All() {
-			var list = new List<Beer> { 
-				new Beer {
+		public List<BeerDetailModel> All() {
+		    for (int i = 0; i < 100000000; i++) {
+		        
+		    }
+			var list = new List<BeerDetailModel> { 
+				new BeerDetailModel {
 					Name = "Dogfish 60 Minute IPA",
+                    BreweryName = "Dogfish Head",
 					Rating = 85
 				},
-				new Beer {
+				new BeerDetailModel {
 					Name = "Dogfish 75 Minute IPA",
+                    BreweryName = "Dogfish Head",
 					Rating = 90
 				},
-				new Beer {
+				new BeerDetailModel {
 					Name = "Chimay Première (Red)",
+                    BreweryName = "Dogfish Head",
 					Rating = 85
 				},
-				new Beer {
+				new BeerDetailModel {
 					Name = "Supplication",
+                    BreweryName = "Dogfish Head",
 					Rating = 95
 				}
 			};

@@ -11,9 +11,7 @@ namespace Spikes
     {
         public static Page GetMainPage()
         {
-			var mainNav = new NavigationPage(new MainPage()) {
-				Tint = Color.Accent
-			};
+			var mainNav = new NavigationPage(new MainPage());
 			return mainNav;
         }
     }

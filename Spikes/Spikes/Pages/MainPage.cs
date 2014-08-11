@@ -37,7 +37,7 @@ namespace Spikes {
 				 	Navigation.PushAsync(new JsonWebServicePage());
 					break;
 				case "MVVM":
-					Navigation.PushAsync(new MvvmPage());
+					Navigation.PushAsync(new BeerListView());
 					break;
 				case "WebView":
 					Navigation.PushAsync(new WebViewPage());
