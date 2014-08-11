@@ -16,7 +16,8 @@ namespace Spikes {
 				RowHeight = 40,
 				ItemsSource = new string[] {
 					"Json",
-					"MVVM"
+					"MVVM",
+					"WebView"
 				}
 			};
 
@@ -37,6 +38,9 @@ namespace Spikes {
 					break;
 				case "MVVM":
 					Navigation.PushAsync(new MvvmPage());
+					break;
+				case "WebView":
+					Navigation.PushAsync(new WebViewPage());
 					break;
 				default:
 					throw new ArgumentOutOfRangeException("Unknown page");

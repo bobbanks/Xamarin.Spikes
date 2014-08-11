@@ -1,11 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|Mixed Platforms" PreferredExecutionTarget="Android.192.168.56.101:5555" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Spikes/Spikes/App.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|Mixed Platforms" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina.7.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Spikes/Spikes/Pages/MvvmPage.cs">
     <Files>
-      <File FileName="Spikes/Spikes/Services/IJsonTestService.cs" Line="1" Column="1" />
       <File FileName="Spikes/Spikes/Pages/JsonWebServicePage.cs" Line="1" Column="1" />
       <File FileName="Spikes/Spikes/Pages/MainPage.cs" Line="1" Column="1" />
-      <File FileName="Spikes/Spikes/App.cs" Line="19" Column="19" />
+      <File FileName="Spikes/Spikes/Pages/MvvmPage.cs" Line="6" Column="6" />
+      <File FileName="Spikes/Spikes/Model/Beer.cs" Line="1" Column="1" />
+      <File FileName="Spikes/Spikes/Services/BeerDataService.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

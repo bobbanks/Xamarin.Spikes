@@ -92,5 +92,10 @@
   -->
   <ItemGroup>
     <Folder Include="Model\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\article.html" />
+    <EmbeddedResource Include="Resources\article.pdf" />
   </ItemGroup>
 </Project>
