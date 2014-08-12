@@ -49,6 +49,7 @@
     <Compile Include="Pages\MainPage.cs" />
     <Compile Include="Services\BeerDataService.cs" />
     <Compile Include="Pages\BeerListView.cs" />
+    <Compile Include="Interfaces\IBaseUrl.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ModernHttpClient">
@@ -105,4 +106,7 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\..\packages\Xamarin.Forms.1.2.2.6243\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.1.2.2.6243\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets'))" />
   </Target>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
 </Project>

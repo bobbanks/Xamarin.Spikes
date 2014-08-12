@@ -1,12 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina.7.1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Spikes/Spikes/Pages/BasePage.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|Mixed Platforms" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina4.7.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Spikes/Spikes/Pages/WebViewPage.cs">
     <Files>
-      <File FileName="Spikes/Spikes/Pages/BasePage.cs" Line="2" Column="2" />
+      <File FileName="Spikes/Spikes/Pages/WebViewPage.cs" Line="64" Column="64" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/technotects/Xamarin/Xamarin.Spikes/Spikes/Spikes.Android/Services/BaseUrl_Android.cs" line="4" column="4" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
