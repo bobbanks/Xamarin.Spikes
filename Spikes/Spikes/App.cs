@@ -12,7 +12,9 @@ namespace Spikes
         private static Page homeView;
 
         public static Page GetMainPage() {
-            return homeView ?? (homeView = new NavigationPage(new MainPage()));
+            return homeView ?? (homeView = new NavigationPage(new MainPage()) {
+                BarTextColor = Color.White
+            });
         }
     }
 }

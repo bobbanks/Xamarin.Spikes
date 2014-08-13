@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Spikes.Pages {
 
-    public class JsonWebServicePage : ContentPage {
+    public class JsonWebServicePage : BaseView {
 		protected Label timeLabel;
 
         public JsonWebServicePage() {

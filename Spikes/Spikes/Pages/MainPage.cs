@@ -3,21 +3,24 @@ using Xamarin.Forms;
 using Spikes.Pages;
 
 namespace Spikes {
-	public class MainPage : ContentPage {
+	public class MainPage : BaseView {
 
 		private ListView listView;
 
 		public MainPage() {
 			var layout = new StackLayout() {
 				VerticalOptions = LayoutOptions.FillAndExpand,
-			};
+                BackgroundColor = Color.White
+            };
 
 			listView = new ListView() {
 				RowHeight = 40,
 				ItemsSource = new string[] {
 					"Json",
 					"MVVM",
-					"WebView"
+					"WebView",
+                    "Quiz",
+                    "Download"
 				}
 			};
 
@@ -41,6 +44,12 @@ namespace Spikes {
 					break;
 				case "WebView":
 					Navigation.PushAsync(new WebViewPage());
+					break;
+				case "Quiz":
+					Navigation.PushAsync(new QuizView());
+					break;
+				case "Download":
+					Navigation.PushAsync(new DownloadView());
 					break;
 				default:
 					throw new ArgumentOutOfRangeException("Unknown page");

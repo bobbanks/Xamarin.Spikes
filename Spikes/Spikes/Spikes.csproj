@@ -35,10 +35,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="Interfaces\IDownloadService.cs" />
     <Compile Include="Model\BeerDetailModel.cs" />
+    <Compile Include="Model\Quiz.cs" />
     <Compile Include="Pages\BaseView.cs" />
     <Compile Include="Pages\BeerDetailView.cs" />
+    <Compile Include="Pages\DownloadView.cs" />
+    <Compile Include="Pages\QuizView.cs" />
     <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="Services\IQuizDataService.cs" />
     <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\BeerDetailViewModel.cs" />
     <Compile Include="ViewModel\BeerListViewModel.cs" />
@@ -49,7 +54,6 @@
     <Compile Include="Pages\MainPage.cs" />
     <Compile Include="Services\BeerDataService.cs" />
     <Compile Include="Pages\BeerListView.cs" />
-    <Compile Include="Interfaces\IBaseUrl.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ModernHttpClient">
@@ -106,7 +110,5 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\..\packages\Xamarin.Forms.1.2.2.6243\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.1.2.2.6243\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets'))" />
   </Target>
-  <ItemGroup>
-    <Folder Include="Interfaces\" />
-  </ItemGroup>
+  <ItemGroup />
 </Project>
